@@ -55,6 +55,10 @@ if value and new_uuid and new_uuid != st.session_state.get('uuid'):
 - [x] add cursor position
 
 
+## _
+
+![](inline_suggestion.png)
+
 
 
 
