@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="streamlit-monaco-copilot",
-    version="v0.0.1",
+    version="v0.0.2dev2",
     author="Liu-Hetian",
     author_email="80733866@qq.com",
     description="Streamlit component that allows you to build your own simple github copilot",

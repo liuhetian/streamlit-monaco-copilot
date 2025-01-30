@@ -50,6 +50,11 @@ if value and new_uuid and new_uuid != st.session_state.get('uuid'):
 
 ## todo
 
-- [ ] remove toolkit near inline suggestion code 
+- [x] remove toolkit near inline suggestion code 
+- [x] add selectedText
+- [x] add cursor position
+
+
+
 
 

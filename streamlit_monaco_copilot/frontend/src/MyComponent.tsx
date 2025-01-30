@@ -161,9 +161,21 @@ function MyComponent({ args, disabled, theme }: ComponentProps): ReactElement {
               endColumn: model.getLineMaxColumn(model.getLineCount())
             })
 
+            // 获取选中的文本
+            const selection = editor.getSelection()
+            const selectedText = selection ? model.getValueInRange(selection) : ""
+
+            // 获取光标位置
+            const cursorPosition = {
+              lineNumber: position.lineNumber,
+              column: position.column
+            }
+
             const dataToSend = {
               beforeCursor,
               afterCursor,
+              selectedText,
+              cursorPosition,
               uuid: generateUUID()
             }
 
@@ -219,7 +231,7 @@ function MyComponent({ args, disabled, theme }: ComponentProps): ReactElement {
               inlineSuggest: {
                 enabled: show,
                 mode: "subwordSmart",
-                showToolbar: "always"
+                showToolbar: "never"
               }
             }}
           />
