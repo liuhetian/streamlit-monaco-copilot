@@ -1,0 +1,7 @@
+build/
+e2e/
+dist/
+*.egg-info
+__pycache__
+node_modules/
+
